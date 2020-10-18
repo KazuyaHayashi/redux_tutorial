@@ -10,7 +10,7 @@ const PostExcerpt = ({ post }) => {
     return (
         <article className="post-excerpt">
             <h3>{post.title}</h3>
-            <PostAuthor userId={post.userId} />
+            <PostAuthor userId={post.user} />
             <p>{post.content.substring(0, 100)}</p>
             <ReactionButtons post={post} />
             <Link to={`posts/${post.id}`} className="button muted-button">

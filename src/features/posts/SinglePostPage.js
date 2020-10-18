@@ -25,7 +25,7 @@ export const SinglePostPage = ({ match }) => {
         <section>
             <article className="post">
                 <h2>{post.title}</h2>
-                <PostAuthor userId={post.userId} />
+                <PostAuthor userId={post.user} />
                 <p className="post-content">{post.content}</p>
                 <ReactionButtons post={post} />
                 <Link to={`/editPost/${postId}`} className="button">
